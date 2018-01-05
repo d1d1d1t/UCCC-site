@@ -70,6 +70,17 @@ Do the following if you're using your customized build of modernizr (http://www.
 
 <script type="text/javascript">
 //win-scale
+window.onload = function(){
+	if(window.innerWidth >= 1000){
+		
+		document.getElementById('styler').setAttribute('href', 'uccc-style.css');
+	
+	}
+	if(window.innerWidth <= 480){
+		document.getElementById('styler').setAttribute('href','uccc-style2.css');
+		}
+}
+
 window.onresize = function(){
 	if(window.innerWidth >= 1000){
 		
